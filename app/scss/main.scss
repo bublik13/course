@@ -5,3 +5,6 @@
 @import "global";// глобальные стили
 
 //подключаем БЭМ блоки
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
