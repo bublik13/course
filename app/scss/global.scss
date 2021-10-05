@@ -1,0 +1,4 @@
+body {
+  font-family: $basic-family;
+  @include font(16px, 24px, 700);
+}
