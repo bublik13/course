@@ -1,15 +1,48 @@
-.header{
-    background: url(../img/background.jpg) center center/ cover no-repeat;
-    opacity: 1;
+.header {
+  background: url(../img/background.jpg) center center/ cover no-repeat;
+  z-index: -1;
+  $brand-color: #ffffff;
+  $second-color: rgba(#ffffff, 0.4);
 }
-.header__container{
-    opacity: -1;
-    padding-top: 48px;
-    padding-bottom: 218px;
+.header__container {
+  z-index: 1;
+  padding-top: 48px;
+  padding-bottom: 218px;
+  background-color: none;
 }
-.header__top{
-
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 198px;
 }
-.header__logo{
-    
+.header__logo {
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.header__top-btn {
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.header__hero {
+}
+.header__h1 {
+  @include font(64px, 90px, 700);
+  margin-right: 391px;
+  margin-bottom: 50px;
+  //   переделать под грид сетку
+}
+.header__timer {
+  display: flex;
+}
+.timer__item {
+  padding: 20px 30px;
+  background-color: $body-bg-text;
+  margin-right: 30px;
+}
+.timer__number {
+  @include font(36px, 54px, 700);
+}
+.timer__time {
+  @include font(16px, 22px, 400);
+  color: $second-color;
 }

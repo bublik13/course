@@ -1,0 +1,13 @@
+.btn {
+  border-radius: 50px;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+}
+.btn--primary {
+  background: $button-primary-bg;
+}
+.btn--brand {
+  background: $button-brand-bg;
+}

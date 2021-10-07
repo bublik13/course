@@ -1,13 +1,14 @@
-.nav{
-
+.nav {
+  flex-grow: 1;
 }
-.nav__list{
-    display: flex;
-    
+.nav__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
 }
-.nav__item{
-
+.nav__item {
 }
-.nav__link{
-
+.nav__link {
+  padding-left: 28px;
+  padding-right: 28px;
 }
