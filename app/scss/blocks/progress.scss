@@ -1,0 +1,13 @@
+.progress__line-active {
+  width: 704px;
+  height: 6px;
+  position: relative;
+  background-color: $progress-line-bg;
+}
+.progress__line-active:before {
+  content: " ";
+  width: 440px;
+  height: 6px;
+  position: absolute;
+  background: $progress-line-primary-bg;
+}

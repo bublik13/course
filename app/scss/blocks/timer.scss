@@ -1,0 +1,18 @@
+.timer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  max-width: 570px;
+}
+.timer__item {
+  padding: 20px 30px;
+  background-color: $body-bg-text;
+  text-align: center;
+}
+.timer__number {
+  @include font(36px, 54px, 700);
+}
+.timer__time {
+  @include font(16px, 22px, 400);
+  color: $second-color;
+}

@@ -23,26 +23,46 @@
   flex-shrink: 0;
   text-decoration: none;
 }
-.header__hero {
-}
 .header__h1 {
   @include font(64px, 90px, 700);
-  margin-right: 391px;
   margin-bottom: 50px;
-  //   переделать под грид сетку
+  margin-right: 391px;
 }
-.header__timer {
-  display: flex;
-}
-.timer__item {
-  padding: 20px 30px;
+.header__bottom {
   background-color: $body-bg-text;
-  margin-right: 30px;
 }
-.timer__number {
-  @include font(36px, 54px, 700);
+.header__bottom-container {
+  display: flex;
+  align-items: center;
+  padding: 35px 0 28px;
 }
-.timer__time {
-  @include font(16px, 22px, 400);
+.header__bottom-btn {
+  margin-right: 81px;
+}
+.header__desc-list {
+  margin-right: 81px;
+}
+.header__desc-item {
+  display: flex;
+  justify-content: space-between;
   color: $second-color;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.header__desc-num {
+  margin-left: 30px;
+  color: $brand-color;
+}
+.header__progress {
+  display: flex;
+  flex-direction: column;
+}
+.header__desc-item--progress {
+  display: flex;
+  justify-content: flex-start;
+}
+.header__desc-list--row {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0;
 }
