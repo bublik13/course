@@ -1,0 +1,33 @@
+.doing {
+}
+.doing__container {
+  padding-top: 200px;
+  padding-bottom: 204px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.doing_right {
+  position: relative;
+}
+.doing__img {
+  width: auto;
+  object-fit: cover;
+}
+.doing_right:after {
+  content: " ";
+  position: absolute;
+  width: 526px;
+  height: 499px;
+  border: 30px solid #c89afc #7c6afa;
+  box-sizing: border-box;
+  top: -66px;
+  left: -10px;
+}
+.doing__left {
+}
+.doing__h2 {
+  margin-bottom: 45px;
+}
+.doing__desc {
+  margin-right: 15px;
+}
