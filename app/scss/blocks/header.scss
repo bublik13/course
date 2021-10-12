@@ -1,9 +1,8 @@
 .header {
   background: url(../img/background.jpg) center center/ cover no-repeat;
-  z-index: -1;
+  position: relative;
 }
 .header__container {
-  z-index: 1;
   padding-top: 48px;
   padding-bottom: 218px;
   background-color: none;
@@ -11,20 +10,26 @@
 .header__top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 198px;
+  align-items: center;
+  margin-bottom: 199px;
 }
 .header__logo {
   flex-shrink: 0;
   text-decoration: none;
+  position: absolute;
+  top: 40px;
+  left: 73px;
 }
 .header__top-btn {
   flex-shrink: 0;
   text-decoration: none;
+  position: absolute;
+  top: 38px;
+  right: 70px;
 }
 .header__h1 {
-  @include font(64px, 90px, 700);
   margin-bottom: 50px;
-  margin-right: 391px;
+  width: 60%;
 }
 .header__bottom {
   background-color: $body-bg-text;
@@ -32,20 +37,21 @@
 .header__bottom-container {
   display: flex;
   align-items: center;
-  padding: 35px 0 28px;
+  padding-top: 23px;
+  padding-bottom: 21px;
 }
 .header__bottom-btn {
-  margin-right: 81px;
+  margin-right: 85px;
 }
 .header__desc-list {
-  margin-right: 81px;
+  margin-right: 80px;
 }
 .header__desc-item {
   display: flex;
   justify-content: space-between;
   color: $second-color;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .header__desc-num {
   margin-left: 30px;
@@ -58,6 +64,8 @@
 .header__desc-item--progress {
   display: flex;
   justify-content: flex-start;
+  padding-top: 14px;
+  padding-bottom: 7px;
 }
 .header__desc-list--row {
   display: flex;
