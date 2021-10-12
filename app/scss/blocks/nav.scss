@@ -10,4 +10,11 @@
 .nav__link {
   padding-left: 28px;
   padding-right: 28px;
+  @include font(16px, 24px, 400);
+  color: $brand-color;
+}
+@media (max-width: 1440px) {
+  .nav{
+    display: none;
+  }
 }

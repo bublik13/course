@@ -1,0 +1,13 @@
+.logotype__top {
+  z-index: 1;
+  flex-shrink: 0;
+  text-decoration: none;
+  position: absolute;
+  top: 40px;
+  left: 73px;
+}
+@media (max-width: 1400px) {
+  .logotype__top {
+    left: 24px;
+  }
+}

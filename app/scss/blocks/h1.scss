@@ -1,3 +1,8 @@
 h1 {
   @include font(64px, 90px, 700);
 }
+@media (max-width: 960px) {
+  h1 {
+    @include font(54px, 80px, 700);
+  }
+}

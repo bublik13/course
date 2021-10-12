@@ -1,13 +1,13 @@
 .doing {
 }
 .doing__container {
-  padding-top: 200px;
-  padding-bottom: 204px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 .doing_right {
   position: relative;
+  margin-top: 267px;
+  margin-bottom: 258px;
 }
 .doing__img {
   width: auto;
@@ -24,6 +24,7 @@
   left: -10px;
 }
 .doing__left {
+  margin-top: 267px;
 }
 .doing__h2 {
   margin-bottom: 45px;

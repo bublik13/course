@@ -11,3 +11,11 @@
   position: absolute;
   background: $progress-line-primary-bg;
 }
+@media (max-width: 1440px) {
+  .progress__line-active {
+    width: 617px;
+  }
+  .progress__line-active:before {
+    width: 343px;
+  }
+}

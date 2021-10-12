@@ -4,6 +4,9 @@
   cursor: pointer;
   display: inline-block;
   vertical-align: top;
+  border: none;
+  color: $brand-color;
+  @include font(16px, 24px, 400);
 }
 .btn--primary {
   background: $button-primary-bg;
