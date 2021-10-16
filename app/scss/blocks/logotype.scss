@@ -7,6 +7,9 @@
   left: 73px;
 }
 @media (max-width: 1400px) {
+  .logotype{
+    position: fixed;
+  }
   .logotype__top {
     left: 24px;
   }

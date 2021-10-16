@@ -40,8 +40,8 @@
       <header class="header">
         <div class="header__container container">
           <div class="header__top">
-            <nav class="nav">
-              <ul class="nav__list">
+            <nav class="nav header__nav  header__nav--active js-nav">
+              <ul class="nav__list nav__list--column">
                 <li class="nav__item">
                   <a href="#" class="nav__link">Главная</a>
                 </li>
@@ -62,6 +62,11 @@
                 </li>
               </ul>
             </nav>
+            <button type="button" aria-label="close" class="burger header__burger js-burger">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
           </div>
           <div class="header__hero">
             <h1 class="header__h1 h1">Первый курс</br> по компьютерной сборке</h1>
@@ -152,6 +157,16 @@
       </div>
     </section>
     <!-- подключаем js -->
-    <script src="js/main.js"></script>
+    <!-- <script>
+      const body = document.querySelector('.js-body');
+      const nav = document.querySelector('.js-nav');
+      const burger = document.querySelector('.js-burger');
+
+      burger.addEventListener('click', ()=>{  
+        burger.classList.toggle('burger--active');
+        nav.classList.toggle('header__nav--active');
+        body.classList.toggle('body--lock');
+      });
+    </script> -->
   </body>
 </html>

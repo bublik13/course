@@ -5,6 +5,9 @@
   right: 70px;
 }
 @media (max-width: 1400px) {
+  .button__top-btn{
+    position: fixed;
+  }
   .button__top-btn {
     right: 24px;
   }
