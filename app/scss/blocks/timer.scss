@@ -16,7 +16,7 @@
   @include font(16px, 22px, 400);
   color: $second-color;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   .timer {
     margin: 0 auto;
   }
@@ -34,10 +34,6 @@
   }
 }
 @media (max-width: 576px) {
-  .timer {
-    grid-template-columns: repeat(1, 1fr);
-    max-width: 100px;
-  }
   .timer__number {
     @include font(26px, 44px, 700);
   }
