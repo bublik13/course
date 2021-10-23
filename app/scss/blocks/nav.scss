@@ -13,17 +13,11 @@
   @include font(16px, 24px, 400);
   color: $brand-color;
 }
-// @media (max-width: 1440px) {
-//   .nav{
-//     display: none;
-//   }
-// }
-// @media (max-width: 1024px) {
-//   .nav__link {
-//     padding-left: 7px;
-//     padding-right: 7px;
-//   }
-// }
+@media (max-width: 1300px) {
+  .nav__list {
+    margin-left: 0;
+  }
+}
 @media (max-width: 970px) {
   .nav__list--column {
     display: flex;

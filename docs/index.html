@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body class="body">
-    <section class="body js-body">
+  <body class="body js-body">
+    <section class="section">
       <!-- <img class="pp" src="img/desktop.jpg" alt=""> -->
       <style>
         .pp{
@@ -27,20 +27,19 @@
           pointer-events: none;
         }
       </style>
-      <div class="logotype">
-        <a href="#" class="logotype__top logo">
-        <img
-          width="40"
-          height="40"
-          src="img/logo-header.svg"
-          alt="logo"
-          class="logo__img"
-        />
-      </a></div>
       <header class="header">
         <div class="header__container container">
           <div class="header__top">
-            <nav class="nav header__nav  header__nav--active js-nav">
+            <a href="#" class="header__logo logo">
+              <img
+                width="40"
+                height="40"
+                src="img/logo-header.svg"
+                alt="logo"
+                class="logo__img"
+              />
+            </a>
+            <nav class="nav header__nav js-nav">
               <ul class="nav__list nav__list--column">
                 <li class="nav__item">
                   <a href="#" class="nav__link">Главная</a>
@@ -62,6 +61,8 @@
                 </li>
               </ul>
             </nav>
+            <button type="button" class="button__top-btn btn btn--primary btn--medium">Зайти в кабинет </button>
+
             <button type="button" aria-label="close" class="burger header__burger js-burger">
               <span class="burger__line"></span>
               <span class="burger__line"></span>
@@ -119,10 +120,8 @@
           </div>
         </div>
       </header>
-      <div class="button">
-        <button type="button" class="button__top-btn btn btn--primary btn--medium">Зайти в кабинет </button>
-      </div>
-      <section class="doing">
+     
+      <!-- <section class="doing">
         <div class="doing__container container">
           <div class="doing_right">
             <img width="446" height="446" src="img/player-doing.jpg" alt="player" class="doing__img"/>
@@ -137,8 +136,8 @@
           </div>
         </div>
       </section>
-    </section>
-    <section class="result">
+    </section> -->
+    <!-- <section class="result">
       <div class="result__container container">
         <div class="result__top">
           <div class="radius__line">
@@ -155,9 +154,9 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- подключаем js -->
-    <!-- <script>
+    </section> -->
+
+  <script>
       const body = document.querySelector('.js-body');
       const nav = document.querySelector('.js-nav');
       const burger = document.querySelector('.js-burger');
@@ -167,6 +166,6 @@
         nav.classList.toggle('header__nav--active');
         body.classList.toggle('body--lock');
       });
-    </script> -->
+    </script>
   </body>
 </html>

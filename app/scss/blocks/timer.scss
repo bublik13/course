@@ -3,6 +3,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 35px;
   max-width: 527px;
+  margin-bottom: 170px;
 }
 .timer__item {
   padding: 17px 29px;
@@ -19,13 +20,7 @@
 @media (max-width: 1300px) {
   .timer {
     margin: 0 auto;
-  }
-}
-@media (max-width: 960px) {
-  .timer {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 25px;
-    max-width: 300px;
+    margin-bottom: 170px;
   }
 }
 @media (max-width: 820px) {
@@ -33,11 +28,23 @@
     margin: 0 auto;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .timer {
+    max-width: 476px;
+  }
   .timer__number {
     @include font(26px, 44px, 700);
   }
   .timer__time {
     @include font(12px, 12px, 400);
+  }
+}
+@media (max-width: 576px) {
+  .timer {
+    max-width: 330px;
+    grid-gap: 10px;
+  }
+  .timer__item {
+    padding: 10px 15px;
   }
 }

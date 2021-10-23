@@ -1,13 +1,13 @@
-h1 {
+.h1 {
   @include font(64px, 90px, 700);
 }
-@media (max-width: 960px) {
-  h1 {
+@media (max-width: 992px) {
+  .h1 {
     @include font(54px, 80px, 700);
   }
 }
-@media (max-width: 576px) {
-  h1 {
+@media (max-width: 768px) {
+  .h1 {
     @include font(30px, 70px, 700);
   }
 }

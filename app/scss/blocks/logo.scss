@@ -1,16 +1,16 @@
-.logotype__top {
-  z-index: 1;
+.header__logo {
+  z-index: 3;
   flex-shrink: 0;
   text-decoration: none;
   position: absolute;
-  top: 40px;
+  top: 38px;
   left: 73px;
 }
 @media (max-width: 1400px) {
   .logotype{
     position: fixed;
   }
-  .logotype__top {
+  .header__logo{
     left: 24px;
   }
 }

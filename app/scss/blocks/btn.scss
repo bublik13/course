@@ -14,7 +14,7 @@
 .btn--brand {
   background: $button-brand-bg;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 .btn {
   @include font(12px, 14px, 400);
 }
