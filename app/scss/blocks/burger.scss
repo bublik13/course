@@ -1,0 +1,35 @@
+.burger {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+}
+.burger__line {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #ffffff;
+  top: 50%;
+  margin-top: -1px;
+  left: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.burger__line:first-child {
+  transform: translateY(-8px);
+}
+.burger__line:last-child {
+  transform: translateY(8px);
+}
+.burger--active .burger__line:first-child {
+  transform: translateY(0) rotate(45deg);
+}
+
+.burger--active .burger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger--active .burger__line:last-child {
+  transform: translateY(0) rotate(-45deg);
+}

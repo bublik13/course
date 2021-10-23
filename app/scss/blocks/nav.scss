@@ -12,13 +12,32 @@
   padding-right: 28px;
   @include font(16px, 24px, 400);
   color: $brand-color;
+  display: block;
+  position: relative;
 }
+.nav__link:after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  background-color:red;
+  transform: scaleX(0);
+  transform-origin: center center;
+  transition: transform .2s ease-in;
+}
+.nav__link:hover:after {
+  transform: scaleX(1);
+  transform-origin: center center;
+}
+
 @media (max-width: 1300px) {
   .nav__list {
     margin-left: 0;
   }
 }
-@media (max-width: 970px) {
+@media (max-width: 1200px) {
   .nav__list--column {
     display: flex;
     flex-direction: column;

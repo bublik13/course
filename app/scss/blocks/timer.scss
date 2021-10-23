@@ -23,6 +23,11 @@
     margin-bottom: 170px;
   }
 }
+@media (max-width: 1024px) {
+  .timer {
+    margin-bottom: 0px;
+  }
+}
 @media (max-width: 820px) {
   .timer {
     margin: 0 auto;
@@ -33,7 +38,7 @@
     max-width: 476px;
   }
   .timer__number {
-    @include font(26px, 44px, 700);
+    @include font(20px, 39px, 700);
   }
   .timer__time {
     @include font(12px, 12px, 400);
@@ -42,7 +47,7 @@
 @media (max-width: 576px) {
   .timer {
     max-width: 330px;
-    grid-gap: 10px;
+    grid-gap: 8px;
   }
   .timer__item {
     padding: 10px 15px;

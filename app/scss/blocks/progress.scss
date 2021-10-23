@@ -22,6 +22,11 @@
 }
 @media (max-width: 768px) {
   .progress {
-    width: 50%;
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .progress {
+    width: 100%;
   }
 }
