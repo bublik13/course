@@ -6,6 +6,10 @@
   justify-content: center;
   list-style-type: none;
   margin-left: 110px;
+  @include media($xl){
+    margin-left: 0;
+  }
+ 
 }
 .nav__link {
   padding-left: 28px;
@@ -32,12 +36,7 @@
   transform-origin: center center;
 }
 
-@media (max-width: 1300px) {
-  .nav__list {
-    margin-left: 0;
-  }
-}
-@media (max-width: 1200px) {
+@include media($lg){
   .nav__list--column {
     display: flex;
     flex-direction: column;
@@ -51,7 +50,7 @@
     padding-bottom: 20px;
   }
 }
-@media (max-width: 576px) {
+@include media($sm){
   .nav__list--column .nav__link {
     margin-bottom: 21px;
     padding: 0;

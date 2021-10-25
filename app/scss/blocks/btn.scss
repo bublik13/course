@@ -7,6 +7,22 @@
   border: none;
   color: $brand-color;
   @include font(16px, 24px, 400);
+  transition: opacity .2s ease;
+
+  &[disabled], &._disabled{
+    background: #ccc;
+    pointer-events: none;
+  }
+
+  &:hover{
+    opacity: .8;
+  }
+  &:active, &._active{
+    opacity: 1;
+  }
+  &:focus-visible{
+    box-shadow: 0 0 0 2px aqua;
+  }
 }
 .btn--primary {
   background: $button-primary-bg;

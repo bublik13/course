@@ -1,13 +1,12 @@
 .h1 {
   @include font(64px, 90px, 700);
 }
-@media (max-width: 992px) {
-  .h1 {
+
+.h1--reponsive{
+  @include media($md){
     @include font(54px, 80px, 700);
   }
-}
-@media (max-width: 576px) {
-  .h1 {
+  @include media($sm){
     @include font(30px, 45px, 700);
   }
 }

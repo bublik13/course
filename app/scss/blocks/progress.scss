@@ -1,32 +1,13 @@
-.progress {
-  width: 60%;
-  padding-left: 80px;
-}
-.progress__line-active {
-  width: 100%;
+.progress__line {
   height: 6px;
   position: relative;
   background-color: $progress-line-bg;
 }
-.progress__line-active:before {
-  content: " ";
-  width: 64%;
-  height: 6px;
+.progress__line-active {
   position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
   background: $progress-line-primary-bg;
 }
-@media (max-width: 1300px) {
-  .progress {
-    padding-left: 0;
-  }
-}
-@media (max-width: 768px) {
-  .progress {
-    width: 70%;
-  }
-}
-@media (max-width: 576px) {
-  .progress {
-    width: 100%;
-  }
-}
+

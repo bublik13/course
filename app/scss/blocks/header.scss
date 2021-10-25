@@ -151,6 +151,29 @@
     margin-bottom: 15px;
   }
 }
+
+.header__progress{
+  width: 60%;
+  padding-left: 80px;
+}
+
+@media (max-width: 1300px) {
+  .header__progress {
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .header__progress {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .header__progress {
+    width: 100%;
+  }
+}
+
+
 @media (max-width: 576px) {
   .header__container{
     padding-top: 16px;
