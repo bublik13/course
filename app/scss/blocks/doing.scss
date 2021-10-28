@@ -1,5 +1,4 @@
-.doing {
-}
+
 .doing__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -64,6 +63,7 @@
   @include media($lg){
    text-align: center;
    margin-top: 0;
+   margin-bottom: 20px;
   }
 }
 .doing__desc {
