@@ -5,23 +5,15 @@
   position: absolute;
   top: 38px;
   left: 73px;
-}
-@media (max-width: 1200px) {
-  .logotype{
-    position: fixed;
-  }
-  .header__logo{
+  z-index: 1;
+  @include media($lg) {
     left: 24px;
     top: 48px;
   }
-}
-@media (max-width: 768px) {
-  .header__logo{
+  @include media($md) {
     top: 30px;
   }
-}
-@media (max-width: 576px) {
-  .header__logo{
+  @include media($sm) {
     top: 16px;
   }
 }

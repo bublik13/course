@@ -6,51 +6,46 @@
   justify-content: center;
   list-style-type: none;
   margin-left: 110px;
-  @include media($xl){
+  @include media($xl) {
     margin-left: 0;
   }
- 
 }
 .nav__link {
   padding-left: 28px;
   padding-right: 28px;
-  @include font(16px, 24px, 400);
+  @include font(26px, 34px, 400);
   color: $brand-color;
   display: block;
   position: relative;
 }
 .nav__link:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   left: 0;
   bottom: 0;
   right: 0;
   height: 2px;
-  background-color:red;
+  background-color: red;
   transform: scaleX(0);
   transform-origin: center center;
-  transition: transform .2s ease-in;
+  transition: transform 0.2s ease-in;
 }
 .nav__link:hover:after {
   transform: scaleX(1);
   transform-origin: center center;
 }
-
-@include media($lg){
+@include media($lg) {
   .nav__list--column {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .nav__list--column .nav__link {
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.12em;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
-@include media($sm){
+@include media($sm) {
   .nav__list--column .nav__link {
     margin-bottom: 21px;
     padding: 0;

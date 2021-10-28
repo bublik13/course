@@ -4,14 +4,10 @@
   position: absolute;
   top: 38px;
   right: 72px;
-}
-@media (max-width: 1400px) {
-  .button__top-btn {
+  @include media($xxl) {
     right: 24px;
   }
-}
-@media (max-width: 1200px) {
-  .button__top-btn {
+  @include media($lg) {
     position: relative;
     margin-left: auto;
     margin-right: auto;
