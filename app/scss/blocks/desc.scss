@@ -1,8 +1,4 @@
 .desc {
   @include font(16px, 26px, 400);
 }
-@media (max-width: 768px) {
-  .desc {
-    @include font(12px, 14px, 400);
-  }
-}
+

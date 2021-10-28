@@ -38,10 +38,7 @@
     max-width: 476px;
   }
   .timer__number {
-    @include font(20px, 39px, 700);
-  }
-  .timer__time {
-    @include font(12px, 12px, 400);
+    @include font(26px, 39px, 700);
   }
 }
 @media (max-width: 576px) {
@@ -50,6 +47,6 @@
     grid-gap: 8px;
   }
   .timer__item {
-    padding: 10px 15px;
+    padding: 10px 10px;
   }
 }

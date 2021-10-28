@@ -1,3 +1,11 @@
 .h2{
     @include font(48px, 67px, 700);
 }
+.h2--reponsive{
+    @include media($md){
+      @include font(38px, 53px, 700);
+    }
+    @include media($sm){
+      @include font(28px, 43px, 700);
+    }
+  }
