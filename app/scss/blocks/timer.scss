@@ -3,14 +3,38 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 35px;
   max-width: 527px;
+  margin-bottom: 170px;
+  @include media($xl) {
+    margin: 0 auto;
+    margin-bottom: 170px;
+  }
+  @include media($lg-md) {
+    margin-bottom: 0px;
+  }
+  @include media($lg-sm) {
+    margin: 0 auto;
+  }
+  @include media($md) {
+    max-width: 476px;
+  }
+  @include media($sm) {
+    max-width: 330px;
+    grid-gap: 8px;
+  }
 }
 .timer__item {
   padding: 17px 29px;
   background-color: $body-bg-text;
   text-align: center;
+  @include media($sm) {
+    padding: 10px 10px;
+  }
 }
 .timer__number {
   @include font(36px, 54px, 700);
+  @include media($md) {
+    @include font(26px, 39px, 700);
+  }
 }
 .timer__time {
   @include font(16px, 22px, 400);

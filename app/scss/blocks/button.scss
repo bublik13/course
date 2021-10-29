@@ -1,0 +1,18 @@
+.button__top-btn {
+  z-index: 3;
+  flex-shrink: 0;
+  position: absolute;
+  top: 38px;
+  right: 72px;
+  @include media($xxl) {
+    right: 24px;
+  }
+  @include media($lg) {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    top: 0;
+    left: 25px;
+  }
+}

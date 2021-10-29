@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body class="body">
-    <section class="body js-body">
-      <img class="pp" src="img/desktop.jpg" alt="">
+  <body class="body js-body">
+    <section class="section">
+      <!-- <img class="pp" src="img/desktop.jpg" alt=""> -->
       <style>
         .pp{
           position: absolute;
@@ -39,8 +39,8 @@
                 class="logo__img"
               />
             </a>
-            <nav class="nav">
-              <ul class="nav__list">
+            <nav class="nav header__nav js-nav">
+              <ul class="nav__list nav__list--column">
                 <li class="nav__item">
                   <a href="#" class="nav__link">Главная</a>
                 </li>
@@ -61,12 +61,16 @@
                 </li>
               </ul>
             </nav>
-            <a href="#" class="header__top-btn btn btn--primary btn--medium"
-              >Зайти в кабинет</a
-            >
+            <button type="button" class="button__top-btn btn btn--primary btn--medium">Зайти в кабинет</button>
+
+            <button type="button" aria-label="close" class="burger header__burger js-burger">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
           </div>
           <div class="header__hero">
-            <h1 class="header__h1 h1">Первый курс</br> по компьютерной сборке</h1>
+            <h1 class="header__h1 h1 h1--reponsive">Первый курс</br> по компьютерной сборке</h1>
             <div class="header__timer timer">
               <div class="timer__item">
                 <div class="timer__number">18</div>
@@ -89,42 +93,42 @@
         </div>
         <div class="header__bottom">
           <div class="header__bottom-container container">
-            <a href="#" class="header__bottom-btn btn btn--brand btn--medium"
-              >Заказать курс</a
-            >
+            <button type="button" class="header__bottom-btn btn btn--brand btn--medium">Заказать курс</button>
             <div class="header__desc-list">
-              <div class="header__desc-item">
+              <div class="header__desc-item desc">
                 Учеников всего:
-                <div class="header__desc-num">200</div>
+                <div class="header__desc-num desc">200</div>
               </div>
-              <div class="header__desc-item">
+              <div class="header__desc-item desc">
                 Успешно закончили курс:
-                <div class="header__desc-num">190</div>
+                <div class="header__desc-num desc">190</div>
               </div>
             </div>
             <div class="header__progress progress">
-              <div class="header__desc-item header__desc-item--progress">
+              <div class="header__desc-item header__desc-item--progress desc">
                 Заработано учениками:
-                <div class="header__desc-num">400 000 Р</div>
+                <div class="header__desc-num desc">400 000 Р</div>
               </div>
               <div class="progress__line">
-                <div class="progress__line-active"></div>
+                <div style="width: 59%;" class="progress__line-active"></div>
               </div>
               <div class="header__desc-list header__desc-list--row">
-                <div class="header__desc-item">0</div>
-                <div class="header__desc-item">1 000 000 Р</div>
+                <div class="header__desc-item desc">0</div>
+                <div class="header__desc-item desc">1 000 000 Р</div>
               </div>
             </div>
           </div>
         </div>
       </header>
+     
       <section class="doing">
         <div class="doing__container container">
-          <div class="doing_right">
-            <img width="446" height="446" src="img/player-doing.jpg" alt="player" class="doing__img"/>
+          <div class="doing__right">
+            <div class="doing__line"></div>
+            <img width="446" height="446" src="img/block.png" alt="block" class="doing__img"/>
           </div>
           <div class="doing__left">
-            <h2 class="doing__h2 h2">
+            <h2 class="doing__h2 h2 h2--reponsive">
               Чем мы занимаемся?
             </h2>
             <div class="doing__desc desc">
@@ -134,7 +138,35 @@
         </div>
       </section>
     </section>
-    <!-- подключаем js -->
-    <script src="js/main.js"></script>
+    <section class="result">
+      <div class="result__container container">
+        <div class="result__top">
+          <div class="radius__line">
+            <div class="radius__line-active"></div>
+          </div>
+          <h2 class="result__h2 h2">Быстрый старт</h2>
+          <div class="result__desc desc">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</div>
+        </div>
+        <div class="result__bottom">
+          <div class="result__item">
+            <div class="result__number">100%</div>
+            <div class="result__line"></div>
+            <div class="result__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+  <script>
+      const body = document.querySelector('.js-body');
+      const nav = document.querySelector('.js-nav');
+      const burger = document.querySelector('.js-burger');
+
+      burger.addEventListener('click', ()=>{  
+        burger.classList.toggle('burger--active');
+        nav.classList.toggle('header__nav--active');
+        body.classList.toggle('body--lock');
+      });
+    </script>
   </body>
 </html>

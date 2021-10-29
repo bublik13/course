@@ -1,0 +1,19 @@
+.header__logo {
+  z-index: 3;
+  flex-shrink: 0;
+  text-decoration: none;
+  position: absolute;
+  top: 38px;
+  left: 73px;
+  z-index: 1;
+  @include media($lg) {
+    left: 24px;
+    top: 48px;
+  }
+  @include media($md) {
+    top: 30px;
+  }
+  @include media($sm) {
+    top: 16px;
+  }
+}
