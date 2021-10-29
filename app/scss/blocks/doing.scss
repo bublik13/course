@@ -14,8 +14,10 @@
     margin: 0 auto;
     margin-bottom: 60px;
   }
+  @include media($md) {
+    max-width: 400px;
+  }
   @include media($sm) {
-    margin: 0;
     margin-bottom: 30px;
   }
 }

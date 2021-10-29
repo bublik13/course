@@ -19,11 +19,9 @@
     width: 68%;
   }
   @include media($md) {
-    width: 68%;
-  }
-  @include media($sm) {
     width: 100%;
   }
+  
 }
 .frame:before {
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);

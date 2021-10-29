@@ -16,6 +16,7 @@
   }
   @include media($md) {
     max-width: 476px;
+    grid-gap: 20px;
   }
   @include media($sm) {
     max-width: 330px;

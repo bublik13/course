@@ -75,6 +75,8 @@
   @include media($xl) {
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    text-align: center;
   }
   @include media($lg) {
     margin-top: 73px;
