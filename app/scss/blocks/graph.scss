@@ -2,15 +2,33 @@
   background: $graph-line-bg;
   height: 80px;
   flex-grow: 1;
+  @include media($md) {
+    width: 80px;
+    height: 184px;
+  }
 }
+
 .graph--lg {
   transform: scale(-1);
   height: 60px;
+  @include media($md) {
+    width: 60px;
+    height: 184px;
+    
+  }
 }
 .graph--md {
   height: 30px;
+  @include media($md) {
+    width: 30px;
+    height: 184px;
+  }
 }
 .graph--sm {
   transform: scale(-1);
   height: 10px;
+  @include media($md) {
+    width: 10px;
+    height: 184px;
+  }
 }
