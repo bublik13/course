@@ -1,4 +1,7 @@
 .desc {
   @include font(16px, 26px, 400);
 }
-
+.desc--transparent {
+  color: $brand-color;
+  opacity: 0.5;
+}

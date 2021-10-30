@@ -24,7 +24,7 @@
   
 }
 .frame:before {
-  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  background: $frame-line-bg;
 }
 .frame:after {
   background-color: $body-bg;

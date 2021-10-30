@@ -1,0 +1,16 @@
+.graph {
+  background: $graph-line-bg;
+  height: 80px;
+  flex-grow: 1;
+}
+.graph--lg {
+  transform: scale(-1);
+  height: 60px;
+}
+.graph--md {
+  height: 30px;
+}
+.graph--sm {
+  transform: scale(-1);
+  height: 10px;
+}
