@@ -13,10 +13,13 @@
 .nav__link {
   padding-left: 28px;
   padding-right: 28px;
-  @include font(26px, 34px, 400);
+  @include font(16px, 34px, 400);
   color: $brand-color;
   display: block;
   position: relative;
+  @include media($lg) {
+    @include font(26px, 34px, 400);
+  }
 }
 .nav__link:after {
   content: " ";

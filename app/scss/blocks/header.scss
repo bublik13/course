@@ -16,7 +16,7 @@
   }
 }
 .header__container {
-  padding-top: 48px;
+  padding-top: 43px;
   padding-bottom: 48px;
   background-color: none;
   @include media($lg) {
@@ -69,12 +69,14 @@
   }
 }
 .header__h1 {
-  margin-top: 199px;
+  margin-top: 189px;
   margin-bottom: 50px;
   width: 60%;
   @include media($xl) {
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    text-align: center;
   }
   @include media($lg) {
     margin-top: 73px;
