@@ -35,6 +35,7 @@
   flex-direction: column;
   @include media($md) {
     flex-direction: row;
+    justify-content: center;
   }
 }
 .result__numbers {
@@ -42,7 +43,7 @@
   @include media($md) {
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    text-align: end;
   }
 }
 .result__number {
@@ -54,7 +55,8 @@
     @include font(26px, 40px, 700);
     padding-right: 9px;
     padding-bottom: 0;
-    width: auto;
+    max-width: 74px;
+    height: 255px;
   }
 }
 .result__lines {
@@ -63,6 +65,7 @@
   flex-grow: 1;
   @include media($md) {
     flex-direction: column;
+    flex-grow: 0;
   }
 }
 .result__descs {
@@ -74,8 +77,11 @@
 }
 .result__desc {
   padding-top: 34px;
+  padding-right: 5px;
   @include media($md) {
     padding-top: 0;
     padding-left: 20px;
+    height: 255px;
+    max-width: 306px;
   }
 }
