@@ -1,0 +1,32 @@
+.partners__container {
+  padding-bottom: 153px;
+}
+.partners__top {
+  display: flex;
+}
+.partners__round {
+}
+.partners__h2 {
+  text-align: center;
+  margin-bottom: 89px;
+}
+.partners__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid #000000;
+}
+.partners__icon {
+//   border-bottom-style: solid;
+//   border-right-style: solid;
+//   border-width: 1px;
+
+//   border-color: #ffffff 0.3;
+}
+.partners__icon:nth-child(3n){
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: #ffffff 0.3;
+}
+.partners__img {
+}
