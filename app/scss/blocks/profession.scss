@@ -1,0 +1,77 @@
+.profession__container {
+  padding-bottom: 200px;
+  padding-left: 53px;
+  padding-right: 53px;
+  @include media($lg-md) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @include media($sm) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.profession__h2 {
+  text-align: center;
+  margin-bottom: 120px;
+  @include media($lg-md) {
+    margin-bottom: 80px;
+  }
+  @include media($md) {
+    margin-bottom: 60px;
+  }
+  @include media($sm) {
+    margin-bottom: 50px;
+  }
+}
+.profession__info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 82px;
+  @include media($lg-md) {
+    grid-template-columns: repeat(1, 1fr);
+    width: 50%;
+    margin: 0 auto;
+    grid-gap: 50px;
+  }
+  @include media($sm) {
+    width: 100%;
+  }
+}
+.profession__item {
+  max-width: 432px;
+  @include media($md) {
+    margin: 0 auto;
+  }
+}
+.profession__icon {
+  margin-bottom: 60px;
+  @include media($md) {
+    margin-bottom: 40px;
+  }
+  @include media($sm) {
+    margin-bottom: 30px;
+  }
+}
+.profession__img {
+  display: block;
+  margin: 0 auto;
+}
+.profession__subtitle {
+  text-align: center;
+  padding: 0 17px;
+  margin-bottom: 35px;
+  @include media($xl-lg) {
+   height: 99px;
+  }
+  @include media($md) {
+    margin-bottom: 25px;
+    height: 77px;
+  }
+  @include media($sm) {
+    margin-bottom: 10px;
+  }
+}
+.profession__descr {
+  text-align: center;
+}

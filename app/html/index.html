@@ -120,7 +120,6 @@
           </div>
         </div>
       </header>
-     
       <section class="doing">
         <div class="doing__container container">
           <div class="doing__right frame">
@@ -136,51 +135,76 @@
           </div>
         </div>
       </section>
-    </section>
-    <section class="result">
-      <div class="result__container container">
-        <div class="result__top">
-          <div class="result__fast">
-            <div class="result__round loading">
-              <div class="loading__line-active"></div>
+    
+      <section class="result">
+        <div class="result__container container">
+          <div class="result__top">
+            <div class="result__fast">
+              <div class="result__round loading">
+                <div class="loading__line-active"></div>
+              </div>
+              <h2 class="result__h2 h2 h2--reponsive">Быстрый старт</h2>
+          </div>
+            <p class="result__text desc desc--transparent">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+          </div>
+          <div class="result__bottom">
+            <div class="result__numbers">
+              <div class="result__number">100%</div>
+              <div class="result__number">75%</div>
+              <div class="result__number">50%</div>
+              <div class="result__number">Итог</div>
             </div>
-            <h2 class="result__h2 h2 h2--reponsive">Быстрый старт</h2>
-        </div>
-          <p class="result__text desc desc--transparent">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
-        </div>
-        <div class="result__bottom">
-          <div class="result__numbers">
-            <div class="result__number">100%</div>
-            <div class="result__number">75%</div>
-            <div class="result__number">50%</div>
-            <div class="result__number">Итог</div>
-          </div>
-          <div class="result__lines ">
-            <div class="result__line graph"></div>
-            <div class="result__line graph graph--lg"></div>
-            <div class="result__line graph graph--md"></div>
-            <div class="result__line graph graph--sm"></div>
-          </div>
-          <div class="result__descs">
-            <div class="result__desc desc desc--transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
-            <div class="result__desc desc desc--transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
-            <div class="result__desc desc desc--transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
-            <div class="result__desc desc desc--transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+            <div class="result__lines ">
+              <div class="result__line graph"></div>
+              <div class="result__line graph graph--lg"></div>
+              <div class="result__line graph graph--md"></div>
+              <div class="result__line graph graph--sm"></div>
+            </div>
+            <div class="result__descs">
+              <div class="result__desc desc desc--transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+              <div class="result__desc desc desc--transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+              <div class="result__desc desc desc--transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+              <div class="result__desc desc desc--transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+            </div>
           </div>
         </div>
-      </div>
+      </section> 
+      <section class="profession">
+        <div class="profession__container container">
+          <h2 class="profession__h2 h2  h2--reponsive"> Получите профессию прямо сейчас</h2>
+          <div class="profession__info">
+            <div class="profession__item">
+              <div class="profession__icon"><img width="100" height="100" src="img/computer.png" alt="computer" class="profession__img"></div>
+              <div class="profession__subtitle subtitle">Только практические
+                навыки в работе</div>
+              <p class="profession__descr descr desc--transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+            <div class="profession__item">
+              <div class="profession__icon"><img width="100" height="100" src="img/flash-card.png" alt="flash-card" class="profession__img"></div>
+              <div class="profession__subtitle subtitle">Работа на самом
+                современном оборудовании</div>
+              <p class="profession__descr descr desc--transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+            <div class="profession__item">
+              <div class="profession__icon"><img width="100" height="100" src="img/usb.png" alt="usb" class="profession__img"></div>
+              <div class="profession__subtitle subtitle">Сертификация
+                по окончании обучения</div>
+              <p class="profession__descr descr desc--transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </section> 
+    <script>
+        const body = document.querySelector('.js-body');
+        const nav = document.querySelector('.js-nav');
+        const burger = document.querySelector('.js-burger');
 
-  <script>
-      const body = document.querySelector('.js-body');
-      const nav = document.querySelector('.js-nav');
-      const burger = document.querySelector('.js-burger');
-
-      burger.addEventListener('click', ()=>{  
-        burger.classList.toggle('burger--active');
-        nav.classList.toggle('header__nav--active');
-        body.classList.toggle('body--lock');
-      });
-    </script>
+        burger.addEventListener('click', ()=>{  
+          burger.classList.toggle('burger--active');
+          nav.classList.toggle('header__nav--active');
+          body.classList.toggle('body--lock');
+        });
+      </script>
   </body>
 </html>

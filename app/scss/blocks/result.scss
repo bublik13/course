@@ -1,8 +1,9 @@
 .result__container {
   padding-top: 68px;
-  padding-bottom: 200px;
+  padding-bottom: 161px;
   @include media($lg-md) {
     padding-top: 20px;
+    padding-bottom: 80px;
   }
 }
 .result__fast {

@@ -1,0 +1,6 @@
+.subtitle {
+  @include font(24px, 33px, 500);
+  @include media($sm) {
+    @include font(20px, 27px, 500);
+  }
+}
