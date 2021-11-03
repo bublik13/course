@@ -11,18 +11,27 @@
   margin-bottom: 89px;
 }
 
-
 .partners__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
- 
+  list-style: none;
 }
 
-.partners__icon {
- padding: 29px 66px;
+.partners__item {
+  padding: 29px 66px;
+  list-style: none;
+}
+.partners__item:nth-child(-n + 4) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.partners__item:nth-child(-n + 8) {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.partners__item:nth-child(4),
+.partners__item:nth-child(8) {
+  border-right: 1px solid rgba(18, 18, 18, 0);
 }
 
 .partners__img {
-display: block;
+  display: block;
 }
-
