@@ -1,10 +1,11 @@
 .profession__container {
-  padding-bottom: 200px;
+  padding-bottom: 234px;
   padding-left: 53px;
   padding-right: 53px;
   @include media($lg-md) {
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 80px;
   }
   @include media($sm) {
     padding-left: 16px;

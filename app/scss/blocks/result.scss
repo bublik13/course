@@ -51,12 +51,13 @@
   @include font(36px, 50px, 700);
   color: #ffffff;
   padding-bottom: 19px;
-  width: 325px;
+  // width: 325px;
+  width: 100%;
   @include media($md) {
     @include font(26px, 40px, 700);
     padding-right: 9px;
     padding-bottom: 0;
-    max-width: 74px;
+    
     height: 255px;
   }
 }
@@ -79,10 +80,11 @@
 .result__desc {
   padding-top: 34px;
   padding-right: 5px;
+  width: 100%;
   @include media($md) {
     padding-top: 0;
     padding-left: 20px;
     height: 255px;
-    max-width: 306px;
+    
   }
 }
