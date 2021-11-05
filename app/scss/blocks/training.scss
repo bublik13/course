@@ -1,4 +1,5 @@
 .training__container {
+  padding-top: 50px;
   padding-bottom: 171px;
 }
 .training__top {
@@ -7,11 +8,12 @@
   align-items: center;
 }
 .training__h2 {
-  margin-top: 32px;
+  margin-top: 64px;
   margin-bottom: 30px;
 }
 .training__desc {
   margin-bottom: 80px;
+  width: 33%;
 }
 .training__list {
   position: relative;
@@ -22,7 +24,7 @@
 .training__list:after {
   content: " ";
   position: absolute;
-  left: 50%;
+  left: 51%;
   top: 0;
   bottom: 0;
   width: 6px;
@@ -30,7 +32,6 @@
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
 }
 .training__item {
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -38,24 +39,24 @@
   width: 50%;
   padding-right: 40px;
   text-align: right;
-  padding: 10px 60px 16px 0;
+  padding: 10px 61px 14px 0;
 }
 
 .training__info {
   width: 50%;
-  padding-right: 12px;
   text-align: right;
   display: flex;
   flex-direction: row-reverse;
 }
 .training__line {
-  width: 40px;
+  width: 76px;
   height: 1px;
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
   margin: 10px 0;
 }
-.training__text{
-padding: 10px 22px 10px 10px;
+.training__text {
+  padding-right: 21px;
+  @include font(18px, 29px, 400);
 }
 .training__item:nth-child(even) .training__info {
   padding-right: 0;
