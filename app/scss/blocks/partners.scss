@@ -5,6 +5,10 @@
   @include media($lg-md) {
     padding-right: 16px;
     padding-left: 16px;
+    padding-bottom: 80px;
+  }
+  @include media($md) {
+    padding-bottom: 60px;
   }
 }
 .partners__top {
@@ -12,8 +16,6 @@
   @include media($lg-md) {
     justify-content: center;
   }
-}
-.partners__round {
 }
 .partners__h2 {
   text-align: center;
@@ -24,10 +26,9 @@
     padding-left: 0;
   }
   @include media($sm) {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }
-
 .partners__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

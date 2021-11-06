@@ -7,6 +7,9 @@
     padding-right: 25px;
     padding-bottom: 80px;
   }
+  @include media($md) {
+    padding-bottom: 60px;
+  }
   @include media($sm) {
     padding-left: 16px;
     padding-right: 16px;
@@ -22,7 +25,7 @@
     margin-bottom: 60px;
   }
   @include media($sm) {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }
 .profession__info {

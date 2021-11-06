@@ -1,6 +1,10 @@
 .training__container {
   padding-top: 50px;
   padding-bottom: 171px;
+  @include media($lg-md) {
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
 }
 .training__top {
   display: flex;
@@ -10,15 +14,29 @@
 .training__h2 {
   margin-top: 64px;
   margin-bottom: 30px;
+  @include media($lg-md) {
+    margin-top: 40px;
+  }
+  @include media($md) {
+    margin-top: 20px;
+  }
 }
 .training__desc {
-  margin-bottom: 80px;
+  margin-bottom: 85px;
   width: 33%;
+  text-align: center;
+  @include media($lg-md) {
+    margin-bottom: 50px;
+  }
+  @include media($md) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 .training__list {
   position: relative;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 620px;
   list-style-type: none;
 }
 .training__list:after {
@@ -29,45 +47,54 @@
   bottom: 0;
   width: 6px;
   margin-left: -10px;
-  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  background: $frame-line-bg;
 }
-.training__item {
-  display: flex;
-  flex-direction: column;
-}
-.training__week {
-  width: 50%;
-  padding-right: 40px;
-  text-align: right;
-  padding: 10px 61px 14px 0;
-}
-
 .training__info {
   width: 50%;
   text-align: right;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 63px;
+  @include media($sm) {
+    padding-right: 37px;
+  }
 }
-.training__line {
-  width: 76px;
-  height: 1px;
-  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
-  margin: 10px 0;
+.training__week {
+  padding-top: 2px;
 }
 .training__text {
-  padding-right: 21px;
-  @include font(18px, 29px, 400);
+  position: relative;
+  padding-top: 13px;
+}
+.training__text:after {
+  content: " ";
+  height: 2px;
+  width: 38px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  right: -58px;
+  top: 27px;
+  @include media($sm) {
+    right: -32px;
+    width: 26px;
+  }
 }
 .training__item:nth-child(even) .training__info {
   padding-right: 0;
-
   text-align: left;
   margin-left: auto;
-  flex-direction: row;
+  align-items: flex-start;
+  padding-left: 79px;
+  @include media($sm) {
+    padding-left: 37px;
+  }
 }
-.training__item:nth-child(even) .training__week {
-  padding-right: 0;
-  padding-left: 40px;
-  text-align: left;
-  margin-left: auto;
+.training__item:nth-child(even) .training__text:after {
+  right: auto;
+  left: -75px;
+  top: 25px;
+  @include media($sm) {
+    left: -36px;
+  }
 }

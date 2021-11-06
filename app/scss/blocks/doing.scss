@@ -10,9 +10,8 @@
     padding-bottom: 60px;
   }
   @include media($sm) {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
-
 }
 .doing__right {
   @include media($lg-md) {

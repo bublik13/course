@@ -5,3 +5,14 @@
   color: $brand-color;
   opacity: 0.5;
 }
+.desc--sm-fz {
+  @include font(14px, 22px, 400);
+  color: $brand-color;
+  opacity: 0.5;
+}
+.desc--lg-fz {
+  @include font(18px, 29px, 400);
+  @include media($md) {
+    @include font(16px, 26px, 400);
+  }
+}
