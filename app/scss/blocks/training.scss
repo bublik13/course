@@ -47,7 +47,7 @@
   bottom: 0;
   width: 6px;
   margin-left: -10px;
-  background: $frame-line-bg;
+  background: $line-bg;
 }
 .training__info {
   width: 50%;
@@ -71,7 +71,7 @@
   content: " ";
   height: 2px;
   width: 38px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: $border-line-transparent;
   position: absolute;
   right: -58px;
   top: 27px;
