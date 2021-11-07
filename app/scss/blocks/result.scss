@@ -1,5 +1,5 @@
 .result__container {
-  padding-top: 68px;
+  padding-top: 48px;
   padding-bottom: 200px;
   @include media($lg-md) {
     padding-top: 20px;
@@ -10,7 +10,7 @@
   }
 }
 .result__fast {
-  margin-bottom: 34px;
+  margin-bottom: 48px;
   display: flex;
   @include media($lg-md) {
     justify-content: center;
@@ -18,10 +18,23 @@
   @include media($lg-md) {
     margin-bottom: 20px;
   }
+  @include media($sm) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.result__bagel {
+  margin-left: 30px;
+  @include media($sm) {
+    margin-left: 0;
+  }
 }
 .result__h2 {
-  padding-left: 32px;
-  padding-top: 12px;
+  padding-left: 51px;
+  padding-top: 33px;
+  @include media($sm) {
+    padding-left: 0;
+  }
 }
 .result__text {
   width: 31%;

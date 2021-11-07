@@ -1,0 +1,37 @@
+.bagel {
+  width: 50px;
+  overflow: hidden;
+}
+.bagel--rotate-right {
+  transform: rotate(130deg);
+}
+.bagel--rotate-left {
+  transform: rotate(313deg);
+}
+.bagel--rotate-bottom {
+  transform: rotate(270deg);
+}
+.bagel--rotate-top {
+  transform: rotate(90deg);
+}
+.bagel__line-active {
+  width: 90px;
+  height: 90px;
+  position: relative;
+}
+.bagel__line-active:after,
+.bagel__line-active:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  border-radius: 50%;
+}
+.bagel__line-active:after {
+  background: $body-bg;
+  margin: 15px;
+}
+
