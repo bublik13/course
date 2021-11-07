@@ -31,3 +31,7 @@
 .btn--brand {
   background: $button-brand-bg;
 }
+.btn--black{
+  background-color: $body-bg;
+  border: 1px solid $brand-color;
+}

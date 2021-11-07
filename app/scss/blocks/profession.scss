@@ -43,7 +43,7 @@
   }
 }
 .profession__item {
-  max-width: 432px;
+  width: 100%;
   @include media($md) {
     margin: 0 auto;
   }

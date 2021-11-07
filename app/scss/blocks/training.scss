@@ -1,9 +1,12 @@
 .training__container {
   padding-top: 50px;
-  padding-bottom: 171px;
+  padding-bottom: 221px;
   @include media($lg-md) {
     padding-top: 0;
     padding-bottom: 80px;
+  }
+  @include media($md) {
+    padding-bottom: 60px;
   }
 }
 .training__top {
