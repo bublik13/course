@@ -14,12 +14,17 @@
   }
 }
 .doing__right {
+  width: 83%;
   @include media($lg-md) {
     order: 1;
     margin: 0 auto;
+    width: 53%;
+  }
+  @include media($lg-sm) {
+    width: 68%;
   }
   @include media($md) {
-    max-width: 400px;
+    width: 100%;
   }
 }
 .doing__img {

@@ -8,20 +8,9 @@
   left: 0;
 }
 .frame {
-  width: 83%;
   height: 499px;
   position: relative;
   display: flow-root;
-  @include media($lg-md) {
-    width: 53%;
-  }
-  @include media($lg-sm) {
-    width: 68%;
-  }
-  @include media($md) {
-    width: 100%;
-  }
-  
 }
 .frame:before {
   background: $frame-line-bg;

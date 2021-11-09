@@ -6,7 +6,9 @@
 }
 .footer__h2 {
   margin-bottom: 30px;
-
+  @include media($xs) {
+    text-align: center;
+  }
 }
 .footer__desc {
   text-align: center;
@@ -16,35 +18,53 @@
     width: 100%;
   }
 }
+
 .footer__form {
   display: flex;
-  max-width: 500px;
-  position: relative;
+  justify-content: center;
+  width: 100%;
   margin-bottom: 40px;
-  padding-right: 151px;
+  @include media($xs) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-.footer__inputs {
-  width: auto;
-  display: flex;
-}
+
 .footer__input {
   padding: 11px 30px;
-  width: 353px;
+  max-width: 353px;
   border-radius: 50px 0px 0px 50px;
   border: none;
   white-space: nowrap;
   background-color: rgba(255, 255, 255, 0.25);
   @include font(14px, 22px, 400);
   flex-grow: 1;
+  @include media($xs) {
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+  }
 }
-.footer__send {
+.footer__send:before {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 0 50px 50px 0;
+  content: " ";
   position: absolute;
   top: 0;
-  left: 335px;
+  left: 0;
+  right: 0;
   bottom: 0;
+  @include media($xs) {
+    background-color: transparent;
+  }
+}
+.footer__send {
   text-align: center;
   flex-shrink: 0;
+  position: relative;
 }
+
+
 .footer__socials {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
