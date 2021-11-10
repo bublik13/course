@@ -25,7 +25,6 @@
   width: 100%;
   margin-bottom: 40px;
   @include media($xs) {
-    flex-direction: column;
     align-items: center;
   }
 }
@@ -42,13 +41,15 @@
   @include media($xs) {
     padding: 10px 30px;
     border-radius: 50px;
-    margin-bottom: 20px;
   }
 }
 .footer__send {
   text-align: center;
   flex-shrink: 0;
   margin-left: -20px;
+  @include media($xs) {
+    margin-left: -75px;
+  }
 }
 .footer__socials {
   display: grid;
