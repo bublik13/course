@@ -1,0 +1,7 @@
+.text {
+  color: $brand-color;
+  @include font(18px, 29px, 400);
+  @include media($md) {
+    @include font(16px, 26px, 400);
+  }
+}

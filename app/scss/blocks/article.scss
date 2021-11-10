@@ -1,0 +1,7 @@
+.article{
+    @include font(14px, 22px, 400);
+}
+.article--transparent{
+    color: $brand-color;
+    opacity: 0.5;
+  }

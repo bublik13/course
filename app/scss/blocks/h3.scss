@@ -1,0 +1,7 @@
+.h3{
+    @include font(14px, 22px, 400);
+}
+.h3--transparent{
+    color: $brand-color;
+    opacity: 0.5;
+  }

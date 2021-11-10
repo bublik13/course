@@ -36,7 +36,7 @@
     padding-left: 0;
   }
 }
-.result__text {
+.result__descr {
   width: 31%;
   margin-bottom: 80px;
   @include media($lg-md) {
@@ -84,14 +84,14 @@
     flex-grow: 0;
   }
 }
-.result__descs {
+.result__articles {
   display: flex;
   @include media($md) {
     flex-direction: column;
     justify-content: space-between;
   }
 }
-.result__desc {
+.result__article {
   padding-top: 36px;
   padding-right: 15px;
   width: 100%;

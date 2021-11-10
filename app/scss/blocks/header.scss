@@ -91,6 +91,24 @@
     margin-bottom: 30px;
   }
 }
+.header__button{
+  z-index: 3;
+  flex-shrink: 0;
+  position: absolute;
+  top: 38px;
+  right: 72px;
+  @include media($xxl) {
+    right: 24px;
+  }
+  @include media($lg) {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    top: 0;
+    left: 25px;
+  }
+}
 .header__bottom {
   background-color: $body-bg-text;
   @include media($md) {
@@ -123,14 +141,14 @@
     margin-bottom: 15px;
   }
 }
-.header__desc-item {
+.header__descr-item {
   display: flex;
   justify-content: space-between;
   color: $second-color;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.header__desc-num {
+.header__descr-num {
   margin-left: 30px;
   color: $brand-color;
 }
@@ -147,13 +165,13 @@
     width: 100%;
   }
 }
-.header__desc-item--progress {
+.header__descr-item--progress {
   display: flex;
   justify-content: flex-start;
   padding-top: 14px;
   padding-bottom: 7px;
 }
-.header__desc-list--row {
+.header__descr-list--row {
   display: flex;
   justify-content: space-between;
   margin-right: 0;
