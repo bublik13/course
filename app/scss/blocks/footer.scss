@@ -36,17 +36,13 @@
   background-color: rgba(255, 255, 255, 0.25);
   @include font(14px, 22px, 400);
   flex-grow: 1;
-  @include media($xs) {
-    padding: 10px 30px;
-    border-radius: 50px;
-  }
 }
 .footer__send {
   text-align: center;
   flex-shrink: 0;
   margin-left: -20px;
   @include media($xs) {
-    margin-left: -75px;
+    margin-left: -85px;
   }
 }
 .footer__socials {
