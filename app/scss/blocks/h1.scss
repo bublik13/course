@@ -1,12 +1,11 @@
 .h1 {
   @include font(64px, 90px, 700);
 }
-
-.h1--reponsive{
-  @include media($md){
+.h1--reponsive {
+  @include media($md) {
     @include font(54px, 80px, 700);
   }
-  @include media($sm){
+  @include media($sm) {
     @include font(30px, 45px, 700);
   }
 }

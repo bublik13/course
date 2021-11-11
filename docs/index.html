@@ -14,19 +14,6 @@
   </head>
 
   <body class="body js-body">
-    <section class="section">
-      <img class="pp" src="img/desktop.jpg" alt="">
-      <style>
-        .pp{
-          position: absolute;
-          top: 0;
-          left: 50%;
-          z-index: 999;
-          transform: translateX(-50%);
-          opacity: .6;
-          pointer-events: none;
-        }
-      </style>
       <header class="header">
         <div class="header__container container">
           <div class="header__top">
@@ -93,7 +80,7 @@
         </div>
         <div class="header__bottom">
           <div class="header__bottom-container container">
-            <button type="button" class="header__bottom-btn btn btn--brand btn--medium">Заказать курс</button>
+            <button type="button" class="header__bottom-btn btn btn--brand">Заказать курс</button>
             <div class="header__descr-list">
               <div class="header__descr-item descr">
                 Учеников всего:
@@ -320,10 +307,10 @@
           <h2 class="footer__h2 h2 h2--reponsive">Статьи каждую неделю</h2>
           <p class="footer__descr descr descr--transparent">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
           <div class="footer__form">
-            <!-- <form action="send.php" method="post" class="footer__inputs"> -->
+            <form action="send.php" method="post" class="footer__inputs">
                 <input type="text" name="email" placeholder="E-mail" class="footer__input">
-                <button type="button" class="footer__send btn btn--brand"> Подписаться </button>
-            <!-- </form> -->
+                <button type="submit" class="footer__send btn btn--brand"> Подписаться </button>
+            </form>
           </div>
           <div class="footer__socials">
             <a href="#" class="footer__social"><img src="img/vk-icon.svg" alt="vk" class="footer__icon" width="24" height="24"></a>
@@ -333,7 +320,6 @@
           </div>
         </div>
       </footer>
-    </section> 
     <script>
         const body = document.querySelector('.js-body');
         const nav = document.querySelector('.js-nav');
