@@ -24,11 +24,11 @@
 .nav__link:after {
   content: " ";
   position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  left: 28px;
+  bottom:-4px;
+  right: 28px;
   height: 2px;
-  background-color: red;
+  background: $line-bg;
   transform: scaleX(0);
   transform-origin: center center;
   transition: transform 0.2s ease-in;
