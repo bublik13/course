@@ -25,13 +25,17 @@
   content: " ";
   position: absolute;
   left: 28px;
-  bottom:-4px;
+  bottom: -4px;
   right: 28px;
   height: 2px;
   background: $line-bg;
   transform: scaleX(0);
   transform-origin: center center;
   transition: transform 0.2s ease-in;
+  @include media($sm) {
+    left: 0;
+    right: 0;
+  }
 }
 .nav__link:hover:after {
   transform: scaleX(1);
